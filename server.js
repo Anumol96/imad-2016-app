@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-var article:{
+ 'article':{
     title:'my article..anumol',
     heading:'my article',
     date:'sept 5',
@@ -23,7 +23,7 @@ var article:{
             '</p>'
     
 },
-var articlea:{
+ 'articlea':{
     title:'my articlea..anumol',
     heading:'my articlea',
     date:'sept 5',
@@ -69,8 +69,9 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/article', function (req, res) {
-  res.send(createTemplate(article));
+app.get('/:articleName', function (req, res) {
+    var articleName=req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
