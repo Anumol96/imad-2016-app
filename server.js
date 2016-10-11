@@ -33,7 +33,7 @@ var htmlTemplate = '<html> <head><title>'+ '${title}' +
         '</title><meta name="viewport" content="width-device-width,initial-scole=1"/>'+
         '<link href="/ui/style.css" rel="stylesheet" /></head><body>'+
         '<div class="container"><div><a href="/">HOME</a></div><hr/>'+
-        '<h4>'+ ${heading}+'</h4><h2>'+ ${date}+'</h2><div><h2>'+ ${head}+'</h2></div>'+ ${content}+'</div></body</html>';
+        '<h4>'+ '${heading}'+'</h4><h2>'+'${date}'+'</h2><div><h2>'+ '${head}'+'</h2></div>'+' ${content}'+'</div></body</html>';
 
 return htmlTemplate;
 
