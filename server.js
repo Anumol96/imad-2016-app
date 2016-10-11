@@ -10,18 +10,16 @@ var article = {
     heading:'my article',
     date:'sept 5',
     head:'a malayalam song',
-    content:'
-            <p>
-            Ponnolla thumbi poovali thumbi
-            Ad ad nee adad 
-            Nakshtara poove navarathri poove
-            Azhakin poonchol adad
-            Neeyillenkil innen janmam 
-            Venal kanavayi poy poyene
-            Neyillenkil swapnam polum
-            Minnal kathirukalayi poyene
-            </p>
-        '
+    content:'<p>'+
+            'Ponnolla thumbi poovali thumbi'+
+            'Ad ad nee adad '+
+            'Nakshtara poove navarathri poove'+
+            'Azhakin poonchol adad'+
+            'Neeyillenkil innen janmam'+ 
+            'Venal kanavayi poy poyene'+
+            'Neyillenkil swapnam polum'+
+            'Minnal kathirukalayi poyene'+
+            '</p>'
 };
 
 function createTemplate(data){
@@ -31,37 +29,11 @@ var heading=data.heading;
 var date=data.date;
 var head=data.head;
 var content=data.content;
-var htmlTemplate = '<html>
-    <head>
-        <title>
-            ${title}
-        </title>
-        <meta name="viewport" content="width-device-width,initial-scole=1"/>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-            
-        <div>
-            <a href="/">HOME</a>
-        </div>
-        <hr/>
-        <h4>
-            ${heading}
-        </h4>
-        <h2>
-            ${date}
-        </h2>
-        <div>
-            <h2>
-               ${head}
-            </h2>
-        </div>
-         ${content}
-        </div>
-        
-    </body>
-</html>';
+var htmlTemplate = '<html> <head><title> ${title} </title>'+
+        '<meta name="viewport" content="width-device-width,initial-scole=1"/>'+
+        '<link href="/ui/style.css" rel="stylesheet" /></head><body>'+
+        '<div class="container"><div><a href="/">HOME</a></div><hr/>'+
+        '<h4> ${heading}</h4><h2> ${date}</h2><div><h2> ${head}</h2></div> ${content}</div></body</html>';
 
 return htmlTemplate;
 
