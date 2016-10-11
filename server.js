@@ -30,10 +30,8 @@ var articles={
     head:'a malayalam songline',
     content:'<p>'+
             'Ponnolla thumbi poovali thumbi'+
-            'Ad ad nee adad '
-            '</p>'
-    
-}
+            'Ad ad nee adad'+
+            '</p>'}
 };
 
 function createTemplate(data){
