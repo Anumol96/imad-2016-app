@@ -10,7 +10,7 @@ function moveRight (){
     img.style.marginLeft=marginLeft + 'px';
 }
 
-window.onload = function(){
+window.onclick = function(){
     var interval=setInterval(moveRight, 50);
 
 };
