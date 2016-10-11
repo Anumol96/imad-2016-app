@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var article = {
+var articles={
+var article:{
     title:'my article..anumol',
     heading:'my article',
     date:'sept 5',
@@ -20,6 +21,19 @@ var article = {
             'Neyillenkil swapnam polum'+
             'Minnal kathirukalayi poyene'+
             '</p>'
+    
+},
+var articlea:{
+    title:'my articlea..anumol',
+    heading:'my articlea',
+    date:'sept 5',
+    head:'a malayalam songline',
+    content:'<p>'+
+            'Ponnolla thumbi poovali thumbi'+
+            'Ad ad nee adad '
+            '</p>'
+    
+}
 };
 
 function createTemplate(data){
